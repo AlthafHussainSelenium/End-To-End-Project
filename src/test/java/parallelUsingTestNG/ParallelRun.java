@@ -5,7 +5,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features = {"src/test/resources/parallelUsingTestNG/LoginPage.feature"},
+		features = {"./src/test/resources/parallelUsingTestNG/LoginPage.feature"},
 		glue = { "parallelUsingTestNG" },
 		plugin = {"pretty", "json:target/MyReports/report.json", "junit:target/MyReports/report.xml",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
