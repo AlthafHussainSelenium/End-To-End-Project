@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 22, 2021 07:44:24 PM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 23, 2021 11:23:22 AM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 22, 2021 07:44:24 PM</h3>
+<h3>Aug 23, 2021 11:23:22 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 22, 2021 07:45:08 PM</h3>
+<h3>Aug 23, 2021 11:25:09 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login page feature":38.676
+"Login page feature":97.299
 };
 </script>
 <div class="row">
@@ -263,7 +263,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login page feature</p>
             <p class="text-sm">
-              <span>19:44:29 PM</span> / <span>00:00:38:676</span>
+              <span>11:23:27 AM</span> / <span>00:01:37:299</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -272,9 +272,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login page feature</h5>
-<span class='badge badge-success'>08.22.2021 19:44:29</span>
-<span class='badge badge-danger'>08.22.2021 19:45:08</span>
-<span class='badge badge-default'>00:00:38:676</span>
+<span class='badge badge-success'>08.23.2021 11:23:27</span>
+<span class='badge badge-danger'>08.23.2021 11:25:04</span>
+<span class='badge badge-default'>00:01:37:299</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">@Login_page_feature</span></div>
@@ -306,7 +306,33 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
+        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Login page title</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallelUsingTestNG.loginPageSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallelUsingTestNG.loginPageSteps.user_gets_the_title_of_the_page()">
+                <span>When user gets the title of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallelUsingTestNG.loginPageSteps.page_title_should_be(java.lang.String)">
+                <span>Then page title should be "Login - My Store"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
       </div>
     </div>
         <div class="collapse">
@@ -338,32 +364,6 @@ eventsCount: 5,
               </div>
               <div class="step pass-bg" title="parallelUsingTestNG.loginPageSteps.page_title_should_be(java.lang.String)">
                 <span>And page title should be "My account - My Store"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Login page title</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="parallelUsingTestNG.loginPageSteps.user_is_on_login_page()">
-                <span>Given user is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallelUsingTestNG.loginPageSteps.user_gets_the_title_of_the_page()">
-                <span>When user gets the title of the page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallelUsingTestNG.loginPageSteps.page_title_should_be(java.lang.String)">
-                <span>Then page title should be "Login - My Store"</span>
       <div>
       </div>
               </div>
@@ -414,14 +414,14 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:29 PM</td>
+<td>11:23:27 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>Login page feature</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:29 PM</td>
+<td>11:23:27 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Forgot Password link</a>
 <div class="">
@@ -431,21 +431,21 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:29 PM</td>
+<td>11:23:27 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>Login with correct credentials</a>
+<a href="#" class="linked" test-id='1' id='3'>Login page title</a>
 <div class="">
-<span class="badge badge-default">Login page feature.Login with correct credentials</span>
+<span class="badge badge-default">Login page feature.Login page title</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:29 PM</td>
+<td>11:23:27 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='4'>Login page title</a>
+<a href="#" class="linked" test-id='1' id='4'>Login with correct credentials</a>
 <div class="">
-<span class="badge badge-default">Login page feature.Login page title</span>
+<span class="badge badge-default">Login page feature.Login with correct credentials</span>
 </div>
 </td>
 </tr>
