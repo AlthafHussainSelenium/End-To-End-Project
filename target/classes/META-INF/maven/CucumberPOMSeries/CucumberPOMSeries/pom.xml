@@ -115,17 +115,17 @@
 			<version>2.5</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/de.monochromata.cucumber/reporting-plugin -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>de.monochromata.cucumber</groupId>
 			<artifactId>reporting-plugin</artifactId>
 			<version>4.0.53</version>
-		</dependency>
+		</dependency> -->
 		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>net.masterthought</groupId>
 			<artifactId>cucumber-reporting</artifactId>
 			<version>5.3.0</version>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
