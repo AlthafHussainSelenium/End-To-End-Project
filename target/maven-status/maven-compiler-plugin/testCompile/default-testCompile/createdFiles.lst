@@ -1,0 +1,11 @@
+parallelUsingTestNG\ParallelRun.class
+stepdefinitions\loginPageSteps.class
+stepdefinitions\ContactUsPageSteps.class
+stepdefinitions\AccountsPageSteps.class
+AppHooks\ApplicationHooks.class
+parallelUsingTestNG\AccountsPageSteps.class
+parallelUsingTestNG\ContactUsSteps.class
+parallelUsingTestNG\loginPageSteps.class
+parallelUsingTestNG\ApplicationHooks.class
+parallelUsingTestNG\FailedRun.class
+testRunners\MyTestRunner.class

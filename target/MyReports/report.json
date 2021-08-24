@@ -1,0 +1,346 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-23T05:53:27.721Z",
+        "before": [
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 39526000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login page title",
+        "description": "",
+        "id": "login-page-feature;login-page-title",
+        "after": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2871000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 42503000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on login page",
+            "match": {
+              "location": "parallelUsingTestNG.loginPageSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user gets the title of the page",
+            "match": {
+              "location": "parallelUsingTestNG.loginPageSteps.user_gets_the_title_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "page title should be \"Login - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login - My Store\"",
+                  "offset": 21
+                }
+              ],
+              "location": "parallelUsingTestNG.loginPageSteps.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login_page_feature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-23T05:53:27.075Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 39718000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Forgot Password link",
+        "description": "",
+        "id": "login-page-feature;forgot-password-link",
+        "after": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1428000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 39460000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on login page",
+            "match": {
+              "location": "parallelUsingTestNG.loginPageSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 350000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "forgot your password link should be displayed",
+            "match": {
+              "location": "parallelUsingTestNG.loginPageSteps.forgot_your_password_link_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login_page_feature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-23T05:53:27.717Z",
+        "before": [
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 39576000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login with correct credentials",
+        "description": "",
+        "id": "login-page-feature;login-with-correct-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 6277000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallelUsingTestNG.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38174000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user is on login page",
+            "match": {
+              "location": "parallelUsingTestNG.loginPageSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7644000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters username \"althafhussain.pcet@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"althafhussain.pcet@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "parallelUsingTestNG.loginPageSteps.user_enters_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 310000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters password \"hussain009@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hussain009@\"",
+                  "offset": 21
+                }
+              ],
+              "location": "parallelUsingTestNG.loginPageSteps.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4923000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "parallelUsingTestNG.loginPageSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 179000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user gets the title of the page",
+            "match": {
+              "location": "parallelUsingTestNG.loginPageSteps.user_gets_the_title_of_the_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "page title should be \"My account - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My account - My Store\"",
+                  "offset": 21
+                }
+              ],
+              "location": "parallelUsingTestNG.loginPageSteps.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login_page_feature"
+          }
+        ]
+      }
+    ],
+    "name": "Login page feature",
+    "description": "",
+    "id": "login-page-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/parallelUsingTestNG/LoginPage.feature",
+    "tags": [
+      {
+        "name": "@Login_page_feature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
