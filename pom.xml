@@ -156,10 +156,10 @@
 					</includes>
 					<parallel>methods</parallel>
 					<useUnlimitedThreads>true</useUnlimitedThreads>
-					<systemPropertyVariables>
+					<!--<systemPropertyVariables>
 					<executionBrowser>${browser}</executionBrowser>
 					<aapURL>${url}</aapURL>>
-					</systemPropertyVariables>
+					</systemPropertyVariables> -->
 				</configuration>
 			</plugin>
 			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
