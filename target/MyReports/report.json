@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-23T05:53:27.721Z",
+        "start_timestamp": "2024-03-30T11:17:52.673Z",
         "before": [
           {
             "result": {
-              "duration": 24000000,
+              "duration": 63964700,
               "status": "passed"
             },
             "match": {
@@ -16,8 +16,9 @@
           },
           {
             "result": {
-              "duration": 39526000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 123.0.6312.58 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-SU3N59C\u0027, ip: \u0027192.168.0.104\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002722\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tGetHandleVerifier [0x004DA813+48355]\n\t(No symbol) [0x0046C4B1]\n\t(No symbol) [0x00375358]\n\t(No symbol) [0x003961AC]\n\t(No symbol) [0x00391EF3]\n\t(No symbol) [0x00390579]\n\t(No symbol) [0x003C0C55]\n\t(No symbol) [0x003C093C]\n\t(No symbol) [0x003BA536]\n\t(No symbol) [0x003982DC]\n\t(No symbol) [0x003993DD]\n\tGetHandleVerifier [0x0073AABD+2539405]\n\tGetHandleVerifier [0x0077A78F+2800735]\n\tGetHandleVerifier [0x0077456C+2775612]\n\tGetHandleVerifier [0x005651E0+616112]\n\t(No symbol) [0x00475F8C]\n\t(No symbol) [0x00472328]\n\t(No symbol) [0x0047240B]\n\t(No symbol) [0x00464FF7]\n\tBaseThreadInitThunk [0x7569FCC9+25]\n\tRtlGetAppContainerNamedObjectPath [0x775D7C5E+286]\n\tRtlGetAppContainerNamedObjectPath [0x775D7C2E+238]\n\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)\r\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)\r\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)\r\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat com.qa.factory.DriverFactory.init_driver(DriverFactory.java:28)\r\n\tat parallelUsingTestNG.ApplicationHooks.launchBrowser(ApplicationHooks.java:31)\r\n",
+              "duration": 22932620200,
+              "status": "failed"
             },
             "match": {
               "location": "parallelUsingTestNG.ApplicationHooks.launchBrowser()"
@@ -31,8 +32,9 @@
         "after": [
           {
             "result": {
-              "duration": 4000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because \"this.driver\" is null\r\n\tat parallelUsingTestNG.ApplicationHooks.tearDown(ApplicationHooks.java:45)\r\n",
+              "duration": 28983700,
+              "status": "failed"
             },
             "match": {
               "location": "parallelUsingTestNG.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
@@ -40,8 +42,9 @@
           },
           {
             "result": {
-              "duration": 2871000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.WebDriver.quit()\" because \"this.driver\" is null\r\n\tat parallelUsingTestNG.ApplicationHooks.quitBrowser(ApplicationHooks.java:37)\r\n",
+              "duration": 2999800,
+              "status": "failed"
             },
             "match": {
               "location": "parallelUsingTestNG.ApplicationHooks.quitBrowser()"
@@ -53,8 +56,8 @@
         "steps": [
           {
             "result": {
-              "duration": 42503000000,
-              "status": "passed"
+              "duration": 32981600,
+              "status": "skipped"
             },
             "line": 5,
             "name": "user is on login page",
@@ -65,8 +68,8 @@
           },
           {
             "result": {
-              "duration": 27000000,
-              "status": "passed"
+              "duration": 1999900,
+              "status": "skipped"
             },
             "line": 6,
             "name": "user gets the title of the page",
@@ -77,8 +80,8 @@
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "passed"
+              "duration": 44976700,
+              "status": "skipped"
             },
             "line": 7,
             "name": "page title should be \"Login - My Store\"",
@@ -101,11 +104,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-23T05:53:27.075Z",
+        "start_timestamp": "2024-03-30T11:18:16.746Z",
         "before": [
           {
             "result": {
-              "duration": 15000000,
+              "duration": 3996100,
               "status": "passed"
             },
             "match": {
@@ -114,8 +117,9 @@
           },
           {
             "result": {
-              "duration": 39718000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 123.0.6312.58 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-SU3N59C\u0027, ip: \u0027192.168.0.104\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002722\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tGetHandleVerifier [0x004DA813+48355]\n\t(No symbol) [0x0046C4B1]\n\t(No symbol) [0x00375358]\n\t(No symbol) [0x003961AC]\n\t(No symbol) [0x00391EF3]\n\t(No symbol) [0x00390579]\n\t(No symbol) [0x003C0C55]\n\t(No symbol) [0x003C093C]\n\t(No symbol) [0x003BA536]\n\t(No symbol) [0x003982DC]\n\t(No symbol) [0x003993DD]\n\tGetHandleVerifier [0x0073AABD+2539405]\n\tGetHandleVerifier [0x0077A78F+2800735]\n\tGetHandleVerifier [0x0077456C+2775612]\n\tGetHandleVerifier [0x005651E0+616112]\n\t(No symbol) [0x00475F8C]\n\t(No symbol) [0x00472328]\n\t(No symbol) [0x0047240B]\n\t(No symbol) [0x00464FF7]\n\tBaseThreadInitThunk [0x7569FCC9+25]\n\tRtlGetAppContainerNamedObjectPath [0x775D7C5E+286]\n\tRtlGetAppContainerNamedObjectPath [0x775D7C2E+238]\n\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)\r\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)\r\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)\r\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat com.qa.factory.DriverFactory.init_driver(DriverFactory.java:28)\r\n\tat parallelUsingTestNG.ApplicationHooks.launchBrowser(ApplicationHooks.java:31)\r\n",
+              "duration": 18297333600,
+              "status": "failed"
             },
             "match": {
               "location": "parallelUsingTestNG.ApplicationHooks.launchBrowser()"
@@ -129,8 +133,9 @@
         "after": [
           {
             "result": {
-              "duration": 6000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because \"this.driver\" is null\r\n\tat parallelUsingTestNG.ApplicationHooks.tearDown(ApplicationHooks.java:45)\r\n",
+              "duration": 3998600,
+              "status": "failed"
             },
             "match": {
               "location": "parallelUsingTestNG.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
@@ -138,8 +143,9 @@
           },
           {
             "result": {
-              "duration": 1428000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.WebDriver.quit()\" because \"this.driver\" is null\r\n\tat parallelUsingTestNG.ApplicationHooks.quitBrowser(ApplicationHooks.java:37)\r\n",
+              "duration": 3998400,
+              "status": "failed"
             },
             "match": {
               "location": "parallelUsingTestNG.ApplicationHooks.quitBrowser()"
@@ -151,8 +157,8 @@
         "steps": [
           {
             "result": {
-              "duration": 39460000000,
-              "status": "passed"
+              "duration": 1000200,
+              "status": "skipped"
             },
             "line": 10,
             "name": "user is on login page",
@@ -163,8 +169,8 @@
           },
           {
             "result": {
-              "duration": 350000000,
-              "status": "passed"
+              "duration": 998900,
+              "status": "skipped"
             },
             "line": 11,
             "name": "forgot your password link should be displayed",
@@ -181,11 +187,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-23T05:53:27.717Z",
+        "start_timestamp": "2024-03-30T11:18:35.239Z",
         "before": [
           {
             "result": {
-              "duration": 20000000,
+              "duration": 2000700,
               "status": "passed"
             },
             "match": {
@@ -194,8 +200,9 @@
           },
           {
             "result": {
-              "duration": 39576000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 123.0.6312.58 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-SU3N59C\u0027, ip: \u0027192.168.0.104\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002722\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tGetHandleVerifier [0x004DA813+48355]\n\t(No symbol) [0x0046C4B1]\n\t(No symbol) [0x00375358]\n\t(No symbol) [0x003961AC]\n\t(No symbol) [0x00391EF3]\n\t(No symbol) [0x00390579]\n\t(No symbol) [0x003C0C55]\n\t(No symbol) [0x003C093C]\n\t(No symbol) [0x003BA536]\n\t(No symbol) [0x003982DC]\n\t(No symbol) [0x003993DD]\n\tGetHandleVerifier [0x0073AABD+2539405]\n\tGetHandleVerifier [0x0077A78F+2800735]\n\tGetHandleVerifier [0x0077456C+2775612]\n\tGetHandleVerifier [0x005651E0+616112]\n\t(No symbol) [0x00475F8C]\n\t(No symbol) [0x00472328]\n\t(No symbol) [0x0047240B]\n\t(No symbol) [0x00464FF7]\n\tBaseThreadInitThunk [0x7569FCC9+25]\n\tRtlGetAppContainerNamedObjectPath [0x775D7C5E+286]\n\tRtlGetAppContainerNamedObjectPath [0x775D7C2E+238]\n\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)\r\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)\r\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)\r\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat com.qa.factory.DriverFactory.init_driver(DriverFactory.java:28)\r\n\tat parallelUsingTestNG.ApplicationHooks.launchBrowser(ApplicationHooks.java:31)\r\n",
+              "duration": 12145737300,
+              "status": "failed"
             },
             "match": {
               "location": "parallelUsingTestNG.ApplicationHooks.launchBrowser()"
@@ -209,8 +216,9 @@
         "after": [
           {
             "result": {
-              "duration": 2000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because \"this.driver\" is null\r\n\tat parallelUsingTestNG.ApplicationHooks.tearDown(ApplicationHooks.java:45)\r\n",
+              "duration": 1000400,
+              "status": "failed"
             },
             "match": {
               "location": "parallelUsingTestNG.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
@@ -218,8 +226,9 @@
           },
           {
             "result": {
-              "duration": 6277000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.WebDriver.quit()\" because \"this.driver\" is null\r\n\tat parallelUsingTestNG.ApplicationHooks.quitBrowser(ApplicationHooks.java:37)\r\n",
+              "duration": 1998600,
+              "status": "failed"
             },
             "match": {
               "location": "parallelUsingTestNG.ApplicationHooks.quitBrowser()"
@@ -231,8 +240,8 @@
         "steps": [
           {
             "result": {
-              "duration": 38174000000,
-              "status": "passed"
+              "duration": 999300,
+              "status": "skipped"
             },
             "line": 14,
             "name": "user is on login page",
@@ -243,8 +252,8 @@
           },
           {
             "result": {
-              "duration": 7644000000,
-              "status": "passed"
+              "duration": 2998000,
+              "status": "skipped"
             },
             "line": 15,
             "name": "user enters username \"althafhussain.pcet@gmail.com\"",
@@ -261,8 +270,8 @@
           },
           {
             "result": {
-              "duration": 310000000,
-              "status": "passed"
+              "duration": 9993600,
+              "status": "skipped"
             },
             "line": 16,
             "name": "user enters password \"hussain009@\"",
@@ -279,8 +288,8 @@
           },
           {
             "result": {
-              "duration": 4923000000,
-              "status": "passed"
+              "duration": 999300,
+              "status": "skipped"
             },
             "line": 17,
             "name": "user clicks on Login button",
@@ -291,8 +300,8 @@
           },
           {
             "result": {
-              "duration": 179000000,
-              "status": "passed"
+              "duration": 1999100,
+              "status": "skipped"
             },
             "line": 18,
             "name": "user gets the title of the page",
@@ -303,8 +312,8 @@
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "passed"
+              "duration": 998700,
+              "status": "skipped"
             },
             "line": 19,
             "name": "page title should be \"My account - My Store\"",

@@ -1,23 +1,197 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="99.204">
-<testcase classname="Login page feature" name="Login page title" time="85.064">
-<system-out><![CDATA[Given user is on login page.................................................passed
-When user gets the title of the page........................................passed
-Then page title should be "Login - My Store"................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login page feature" name="Forgot Password link" time="81.752">
-<system-out><![CDATA[Given user is on login page.................................................passed
-Then forgot your password link should be displayed..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login page feature" name="Login with correct credentials" time="97.229">
-<system-out><![CDATA[Given user is on login page.................................................passed
-When user enters username "althafhussain.pcet@gmail.com"....................passed
-And user enters password "hussain009@"......................................passed
-And user clicks on Login button.............................................passed
-Then user gets the title of the page........................................passed
-And page title should be "My account - My Store"............................passed
-]]></system-out>
-</testcase>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="55.754">
+    <testcase classname="Login page feature" name="Login page title" time="23.794">
+        <failure message="session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 123.0.6312.58 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-SU3N59C', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;GetHandleVerifier [0x004DA813+48355]&#10;&#9;(No symbol) [0x0046C4B1]&#10;&#9;(No symbol) [0x00375358]&#10;&#9;(No symbol) [0x003961AC]&#10;&#9;(No symbol) [0x00391EF3]&#10;&#9;(No symbol) [0x00390579]&#10;&#9;(No symbol) [0x003C0C55]&#10;&#9;(No symbol) [0x003C093C]&#10;&#9;(No symbol) [0x003BA536]&#10;&#9;(No symbol) [0x003982DC]&#10;&#9;(No symbol) [0x003993DD]&#10;&#9;GetHandleVerifier [0x0073AABD+2539405]&#10;&#9;GetHandleVerifier [0x0077A78F+2800735]&#10;&#9;GetHandleVerifier [0x0077456C+2775612]&#10;&#9;GetHandleVerifier [0x005651E0+616112]&#10;&#9;(No symbol) [0x00475F8C]&#10;&#9;(No symbol) [0x00472328]&#10;&#9;(No symbol) [0x0047240B]&#10;&#9;(No symbol) [0x00464FF7]&#10;&#9;BaseThreadInitThunk [0x7569FCC9+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x775D7C5E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x775D7C2E+238]&#10;" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given user is on login page.................................................skipped
+When user gets the title of the page........................................skipped
+Then page title should be "Login - My Store"................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 123.0.6312.58 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SU3N59C', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x004DA813+48355]
+	(No symbol) [0x0046C4B1]
+	(No symbol) [0x00375358]
+	(No symbol) [0x003961AC]
+	(No symbol) [0x00391EF3]
+	(No symbol) [0x00390579]
+	(No symbol) [0x003C0C55]
+	(No symbol) [0x003C093C]
+	(No symbol) [0x003BA536]
+	(No symbol) [0x003982DC]
+	(No symbol) [0x003993DD]
+	GetHandleVerifier [0x0073AABD+2539405]
+	GetHandleVerifier [0x0077A78F+2800735]
+	GetHandleVerifier [0x0077456C+2775612]
+	GetHandleVerifier [0x005651E0+616112]
+	(No symbol) [0x00475F8C]
+	(No symbol) [0x00472328]
+	(No symbol) [0x0047240B]
+	(No symbol) [0x00464FF7]
+	BaseThreadInitThunk [0x7569FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x775D7C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x775D7C2E+238]
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.qa.factory.DriverFactory.init_driver(DriverFactory.java:28)
+	at parallelUsingTestNG.ApplicationHooks.launchBrowser(ApplicationHooks.java:31)
+]]></failure>
+    </testcase>
+    <testcase classname="Login page feature" name="Forgot Password link" time="18.429">
+        <failure message="session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 123.0.6312.58 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-SU3N59C', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;GetHandleVerifier [0x004DA813+48355]&#10;&#9;(No symbol) [0x0046C4B1]&#10;&#9;(No symbol) [0x00375358]&#10;&#9;(No symbol) [0x003961AC]&#10;&#9;(No symbol) [0x00391EF3]&#10;&#9;(No symbol) [0x00390579]&#10;&#9;(No symbol) [0x003C0C55]&#10;&#9;(No symbol) [0x003C093C]&#10;&#9;(No symbol) [0x003BA536]&#10;&#9;(No symbol) [0x003982DC]&#10;&#9;(No symbol) [0x003993DD]&#10;&#9;GetHandleVerifier [0x0073AABD+2539405]&#10;&#9;GetHandleVerifier [0x0077A78F+2800735]&#10;&#9;GetHandleVerifier [0x0077456C+2775612]&#10;&#9;GetHandleVerifier [0x005651E0+616112]&#10;&#9;(No symbol) [0x00475F8C]&#10;&#9;(No symbol) [0x00472328]&#10;&#9;(No symbol) [0x0047240B]&#10;&#9;(No symbol) [0x00464FF7]&#10;&#9;BaseThreadInitThunk [0x7569FCC9+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x775D7C5E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x775D7C2E+238]&#10;" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given user is on login page.................................................skipped
+Then forgot your password link should be displayed..........................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 123.0.6312.58 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SU3N59C', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x004DA813+48355]
+	(No symbol) [0x0046C4B1]
+	(No symbol) [0x00375358]
+	(No symbol) [0x003961AC]
+	(No symbol) [0x00391EF3]
+	(No symbol) [0x00390579]
+	(No symbol) [0x003C0C55]
+	(No symbol) [0x003C093C]
+	(No symbol) [0x003BA536]
+	(No symbol) [0x003982DC]
+	(No symbol) [0x003993DD]
+	GetHandleVerifier [0x0073AABD+2539405]
+	GetHandleVerifier [0x0077A78F+2800735]
+	GetHandleVerifier [0x0077456C+2775612]
+	GetHandleVerifier [0x005651E0+616112]
+	(No symbol) [0x00475F8C]
+	(No symbol) [0x00472328]
+	(No symbol) [0x0047240B]
+	(No symbol) [0x00464FF7]
+	BaseThreadInitThunk [0x7569FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x775D7C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x775D7C2E+238]
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.qa.factory.DriverFactory.init_driver(DriverFactory.java:28)
+	at parallelUsingTestNG.ApplicationHooks.launchBrowser(ApplicationHooks.java:31)
+]]></failure>
+    </testcase>
+    <testcase classname="Login page feature" name="Login with correct credentials" time="12.209">
+        <failure message="session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 123.0.6312.58 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-SU3N59C', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;GetHandleVerifier [0x004DA813+48355]&#10;&#9;(No symbol) [0x0046C4B1]&#10;&#9;(No symbol) [0x00375358]&#10;&#9;(No symbol) [0x003961AC]&#10;&#9;(No symbol) [0x00391EF3]&#10;&#9;(No symbol) [0x00390579]&#10;&#9;(No symbol) [0x003C0C55]&#10;&#9;(No symbol) [0x003C093C]&#10;&#9;(No symbol) [0x003BA536]&#10;&#9;(No symbol) [0x003982DC]&#10;&#9;(No symbol) [0x003993DD]&#10;&#9;GetHandleVerifier [0x0073AABD+2539405]&#10;&#9;GetHandleVerifier [0x0077A78F+2800735]&#10;&#9;GetHandleVerifier [0x0077456C+2775612]&#10;&#9;GetHandleVerifier [0x005651E0+616112]&#10;&#9;(No symbol) [0x00475F8C]&#10;&#9;(No symbol) [0x00472328]&#10;&#9;(No symbol) [0x0047240B]&#10;&#9;(No symbol) [0x00464FF7]&#10;&#9;BaseThreadInitThunk [0x7569FCC9+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x775D7C5E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x775D7C2E+238]&#10;" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given user is on login page.................................................skipped
+When user enters username "althafhussain.pcet@gmail.com"....................skipped
+And user enters password "hussain009@"......................................skipped
+And user clicks on Login button.............................................skipped
+Then user gets the title of the page........................................skipped
+And page title should be "My account - My Store"............................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 123.0.6312.58 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SU3N59C', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x004DA813+48355]
+	(No symbol) [0x0046C4B1]
+	(No symbol) [0x00375358]
+	(No symbol) [0x003961AC]
+	(No symbol) [0x00391EF3]
+	(No symbol) [0x00390579]
+	(No symbol) [0x003C0C55]
+	(No symbol) [0x003C093C]
+	(No symbol) [0x003BA536]
+	(No symbol) [0x003982DC]
+	(No symbol) [0x003993DD]
+	GetHandleVerifier [0x0073AABD+2539405]
+	GetHandleVerifier [0x0077A78F+2800735]
+	GetHandleVerifier [0x0077456C+2775612]
+	GetHandleVerifier [0x005651E0+616112]
+	(No symbol) [0x00475F8C]
+	(No symbol) [0x00472328]
+	(No symbol) [0x0047240B]
+	(No symbol) [0x00464FF7]
+	BaseThreadInitThunk [0x7569FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x775D7C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x775D7C2E+238]
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.qa.factory.DriverFactory.init_driver(DriverFactory.java:28)
+	at parallelUsingTestNG.ApplicationHooks.launchBrowser(ApplicationHooks.java:31)
+]]></failure>
+    </testcase>
 </testsuite>
